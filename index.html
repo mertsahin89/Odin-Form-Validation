@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-wrapper">
+        <div class="left-wrapper">
+            <div class="logowrapper">
+                <img src="images/coffeelogo.png" alt="coffe logo" class="logoimage">
+            </div>
+        </div>
+        <div class="right-wrapper">
+            <h3>We have selected and carefully blended the best coffees in the world for you. You can fill out the form below to discover the privileged world of coffee.</h3>
+            <form action="https://httpbin.org/post" method="post">
+                
+                <fieldset>
+                    <legend>Sign Up For Newsletter</legend>
+                    <div class="leftdiv">
+                        <label for="Name">Your Name</label>
+                        <input type="textarea" placeholder="John" name="Name" id="Name" required minlength="2" maxlength="20" >
+                        <label for="Mail">Your Mail*</label>
+                        <input type="email" name="email" id="Mail" required placeholder="john@doe.com">
+                        <label for="Password">Choose Password</label>
+                        <input type="password" name="Password" id="Password" required minlength="6" maxlength="12">
+                    </div>
+                    <div class="rightdiv">
+                        <label for="Surname">Your Surname</label>
+                        <input type="textarea" placeholder="Doe" name="Surname" id="Surname" required minlength="2" maxlength="20" >
+                        <label for="Phone">Your Phone Number</label>
+                        <input type="number" minlength="10" maxlength="15" name="Number" id="Number" placeholder="Optional">
+                        <label for="Confirmpassword">Confirm Password</label>
+                        <input type="password" name="Confirmpassword" id="Confirmpassword" required minlength="6" maxlength="12">
+                    </div>
+                    
+
+                    
+                </fieldset>
+                <button type="submit">Create Account</button>
+                <p>Already have an account? <a href="">Log In</a></p>
+            </form>
+           
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
